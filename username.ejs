@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <% for( const s of pendaftaran) { %>
+          <li><%= s.nama %> <%= s.email %> <%= s.password %></li> 
+          <a href="/delete/<%= s.id %> ">hapus</a>
+          <a href="/edit/<%= s.id %>">edit</a>
+        <% } %>
+        </ul>
+      
+</body>
+</html>
